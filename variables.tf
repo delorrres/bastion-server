@@ -20,8 +20,9 @@ variable "ec2_type" {
   default     = "t3.medium"
 }
 
-variable "private_subnet_name" {
-  type = string
+variable "public_subnet_name" {
+  description = "Name of public subnet"
+  type        = string
 }
 
 variable "my_keypair" {

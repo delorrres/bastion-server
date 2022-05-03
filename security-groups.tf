@@ -5,7 +5,7 @@ resource "aws_security_group" "my_public_app_sg" {
 
   # INBOUND CONNECTIONS (PERSONAL IPS)
   ingress {
-    description = "Allow SSH into the Delores's PUBLIC IP"
+    description = "Allow SSH into the Deloress PUBLIC IP"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
@@ -14,7 +14,7 @@ resource "aws_security_group" "my_public_app_sg" {
 
   #VICTOR IP
   ingress {
-    description = "Allow SSH into the Victor's PUBLIC IP"
+    description = "Allow SSH into the Victors PUBLIC IP"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
@@ -22,7 +22,7 @@ resource "aws_security_group" "my_public_app_sg" {
   }
   #KEVIN IP
   ingress {
-    description = "Allow SSH into the Kevin's PUBLIC IP"
+    description = "Allow SSH into the Kevins PUBLIC IP"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
@@ -30,7 +30,7 @@ resource "aws_security_group" "my_public_app_sg" {
   }
   #AMINA IP
   ingress {
-    description = "Allow SSH into the Amina's's PUBLIC IP"
+    description = "Allow SSH into the Aminas PUBLIC IP"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
@@ -38,14 +38,14 @@ resource "aws_security_group" "my_public_app_sg" {
   }
   #LAUREN IP
   ingress {
-    description = "Allow SSH into the Lauren's PUBLIC IP"
+    description = "Allow SSH into the Laurens PUBLIC IP"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["71.69.155.80/32"] # 0.0.0.0/0
   }
 
-#OUTBOUND CONNECTION
+  #OUTBOUND CONNECTION
   egress {
     description = "Allow bastion connection to servers"
     from_port   = 22
